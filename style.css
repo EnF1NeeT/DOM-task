@@ -885,4 +885,12 @@ main{
         margin-top: 415px;
     }
 }
-  
+
+
+.icon-excel {
+
+    padding-left : 32px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    background-repeat : no-repeat;
+}
