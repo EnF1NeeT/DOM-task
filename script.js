@@ -1,3 +1,5 @@
+
+
 const postsList  = [
     {
         id: '1',
@@ -51,11 +53,9 @@ function targetContent ({ target }) {
 };
 
 
-
-function postGenerator({nickname, topzoneImg, imageList}) {
-    for (let i=0; i<imageList.length; i++){
-        return (
-            `<article class="post">
+function postGenerator({nickname, topzoneImg, imageList}, list) {
+    for (let i=0; i<imageList.length; i++) {
+        list += `<article class="post">
                 <div class="topzone">
                     <img class="topzoneImg" src="${topzoneImg}" alt="postImg">
                     <p>${nickname}</p>
@@ -79,7 +79,6 @@ function postGenerator({nickname, topzoneImg, imageList}) {
                 </div>
                 <div class="postTime">posted <time datetime="24.5.3222">posted 5h ago</time></div>
                 </article>`
-            
-        );
-    }
+        };
+    return list;
 };
