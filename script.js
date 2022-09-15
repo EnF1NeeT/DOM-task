@@ -1,5 +1,3 @@
-
-
 const postsList  = [
     {
         id: '1',
